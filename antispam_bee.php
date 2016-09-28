@@ -778,7 +778,7 @@ class Antispam_Bee {
 		);
 
 		wp_enqueue_script(
-			'ab-raphael',
+			'ab_raphael_helper',
 			plugins_url( 'js/raphael.helper.min.js', __FILE__ ),
 			array( 'raphael' ),
 			$plugin['Version'],
@@ -788,7 +788,7 @@ class Antispam_Bee {
 		wp_enqueue_script(
 			'ab_chart_js',
 			plugins_url( 'js/dashboard.min.js', __FILE__ ),
-			array( 'jquery', 'ab-raphael' ),
+			array( 'jquery', 'ab_raphael_helper' ),
 			$plugin['Version'],
 			true
 		);
